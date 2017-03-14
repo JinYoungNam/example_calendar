@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#08000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/llMonth">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1월"
+                android:id="@+id/txtMonth"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017년 "
+                android:id="@+id/txtYear"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnPrevious"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/img_button_left"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnNext"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/img_button_right"
+            android:layout_marginRight="5dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFC2C2C2"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_box_group_1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp"
+                >
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday"
+                    android:text="일"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="월"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="화"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="0dp">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday"
+                    android:text="토"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm1">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt1"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm2">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:id="@+id/txt2"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm3">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt3"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm4">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt4"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm5">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt5"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm6">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt6"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm7">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt7"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm8">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm9">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt9"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm10">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm11">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm12">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm13">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm14">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm15">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm16">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt16"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm17">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm18">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm19">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm20">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm21">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm22">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm23">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt23"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm24">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm25">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm26">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm27">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm28">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm29">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm30">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt30"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm31">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm32">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm33">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm34">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm35">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm36">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Sunday_number"
+                    android:text="1"
+                    android:id="@+id/txt36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm37">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt37"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm38">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3"
+                    android:id="@+id/txt38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm39">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4"
+                    android:id="@+id/txt39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm40">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5"
+                    android:id="@+id/txt40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm41">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6"
+                    android:id="@+id/txt41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frm42">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Satday_number"
+                    android:text="7"
+                    android:id="@+id/txt42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgbtnOk"
+                    android:background="@drawable/control_button_save_1"/>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/control_button_save_0">
+
+                    <FrameLayout
+                        android:layout_width="1.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@color/color_Control_Button1_Save_Line_0"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_ok"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="확인"
+                        android:id="@+id/textView5"
+                        android:textColor="@color/color_Text_Color"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

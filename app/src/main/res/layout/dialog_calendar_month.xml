@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#08000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017년 "
+                android:id="@+id/txtYear_Month"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnPrevious_Month"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/img_button_left"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnNext_Month"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/img_button_right"
+            android:layout_marginRight="5dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFC2C2C2"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_box_group_1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth1"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="1월"
+                    android:id="@+id/txtMonth1"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth2"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="2월"
+                    android:id="@+id/txtMonth2"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth3"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="3월"
+                    android:id="@+id/txtMonth3"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth4">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="4월"
+                    android:id="@+id/txtMonth4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth5">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="5월"
+                    android:id="@+id/txtMonth5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth6">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="6월"
+                    android:id="@+id/txtMonth6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth7">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="7월"
+                    android:id="@+id/txtMonth7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth8">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="8월"
+                    android:id="@+id/txtMonth8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth9">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="9월"
+                    android:id="@+id/txtMonth9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#10C2C2C2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth10">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="10월"
+                    android:id="@+id/txtMonth10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth11">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="11월"
+                    android:id="@+id/txtMonth11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/frmMonth12">
+
+                <TextView
+                    style="@style/CustomTxt_Calendar_Nomualday_number"
+                    android:text="12월"
+                    android:id="@+id/txtMonth12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

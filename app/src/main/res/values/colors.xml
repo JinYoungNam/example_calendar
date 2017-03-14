@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_calendar_chk">#cccababa</color>
+    <color name="color_calendar_nonchk">#ffffff</color>
+
+    <color name="color_Text_Color">#000000</color>
+    <color name="color_Control_Button1_Save_Line_0">#730004</color>
+    <color name="color_Control_Button1_Save_Up_Top_0">#e6cfcf</color>
+    <color name="color_Control_Button1_Save_Up_Center_0">#e62517</color>
+    <color name="color_Control_Button1_Save_Up_Bottom_0">#e60008</color>
+    <color name="color_Control_Button1_Up">#d6d6d6</color>
+
+    <color name="color_Control_Button1_Save_Up_Top_1">#e6cfcf</color>
+    <color name="color_Control_Button1_Save_Up_Center_1">#ff7a7d</color>
+    <color name="color_Control_Button1_Save_Up_Bottom_1">#ff7a7d</color>
+
+    <color name="color_Control_Button1_Save_Down_Top_1">#ff7a7d</color>
+    <color name="color_Control_Button1_Save_Down_Center_1">#ff7a7d</color>
+    <color name="color_Control_Button1_Save_Down_Bottom_1">#ff7a7d</color>
+</resources>
